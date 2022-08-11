@@ -1,0 +1,151 @@
+#e2 {
+  animation: move1st 1s linear 2s 1 normal forwards;
+}
+
+#e7 {
+  animation: move2nd 1s linear 4s 1 normal forwards;
+}
+
+#f1 {
+  animation: move3rd 1.5s linear 6s 1 normal forwards;
+}
+
+#b8 {
+  animation: move4th 1s linear 8.5s 1 normal forwards;
+}
+
+#d1 {
+  animation-name: move5th, checkmate;
+  animation-duration: 2s, 1s;
+  animation-timing-function: linear, linear;
+  animation-delay: 10.5s, 16.5s;
+  animation-direction: normal, normal;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+}
+
+#f8 {
+  animation: move6th 2s linear 13.5s 1 normal forwards;
+}
+
+#f7 {
+  animation: taken 0.5s linear 17s 1 normal forwards;
+}
+
+#e8 {
+  animation: pulse 0.5s linear 18s infinite alternate forwards;
+}
+
+@keyframes taken {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    color: #990000;
+  }
+
+  to {
+    color: #ff6666;
+  }
+}
+
+@keyframes move1st {
+  from {
+    position: relative;
+    bottom: 0vmin;
+  }
+
+  to {
+    position: relative;
+    bottom: 20vmin;
+  }
+}
+
+@keyframes move2nd {
+  from {
+    position: relative;
+    top: 0vmin;
+  }
+
+  to {
+    position: relative;
+    top: 20vmin;
+  }
+}
+
+@keyframes move3rd {
+  from {
+    position: relative;
+    bottom: 0vmin;
+    right: 0vmin;
+  }
+
+  to {
+    position: relative;
+    bottom: 30vmin;
+    right: 30vmin;
+  }
+}
+
+@keyframes move4th {
+  from {
+    position: relative;
+    top: 0vmin;
+    left: 0vmin;
+  }
+
+  to {
+    position: relative;
+    top: 20vmin;
+    left: 10vmin;
+  }
+}
+
+@keyframes move5th {
+  from {
+    position: relative;
+    bottom: 0vmin;
+    left: 0vmin;
+  }
+
+  to {
+    position: relative;
+    bottom: 40vmin;
+    left: 40vmin;
+  }
+}
+
+@keyframes move6th {
+  from {
+    position: relative;
+    top: 0vmin;
+    right: 0vmin;
+  }
+
+  to {
+    position: relative;
+    top: 40vmin;
+    right: 40vmin;
+  }
+}
+
+@keyframes checkmate {
+  from {
+    position: relative;
+    bottom: 40vmin;
+    left: 40vmin;
+  }
+
+  to {
+    position: relative;
+    bottom: 60vmin;
+    left: 20vmin;
+  }
+}
