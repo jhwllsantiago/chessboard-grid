@@ -508,55 +508,43 @@ body .background {
 }
 
 #pawn-e2 {
-  -webkit-animation: move1st 1s linear 2s 1 normal forwards;
-          animation: move1st 1s linear 2s 1 normal forwards;
+  -webkit-animation: white-1st-move 1s linear 2s 1 normal forwards, reset-pawn-e2 0.5s linear 23s 1 normal forwards;
+          animation: white-1st-move 1s linear 2s 1 normal forwards, reset-pawn-e2 0.5s linear 23s 1 normal forwards;
 }
 
 #pawn-e7 {
-  -webkit-animation: move2nd 1s linear 4s 1 normal forwards;
-          animation: move2nd 1s linear 4s 1 normal forwards;
+  -webkit-animation: black-1st-move 1s linear 4s 1 normal forwards, reset-pawn-e7 0.5s linear 23s 1 normal forwards;
+          animation: black-1st-move 1s linear 4s 1 normal forwards, reset-pawn-e7 0.5s linear 23s 1 normal forwards;
 }
 
 #bishop-f1 {
-  -webkit-animation: move3rd 1.5s linear 6s 1 normal forwards;
-          animation: move3rd 1.5s linear 6s 1 normal forwards;
+  -webkit-animation: white-2nd-move 1.5s linear 6s 1 normal forwards, reset-bishop-f1 0.5s linear 23s 1 normal forwards;
+          animation: white-2nd-move 1.5s linear 6s 1 normal forwards, reset-bishop-f1 0.5s linear 23s 1 normal forwards;
 }
 
 #knight-b8 {
-  -webkit-animation: move4th 1s linear 8.5s 1 normal forwards;
-          animation: move4th 1s linear 8.5s 1 normal forwards;
+  -webkit-animation: black-2nd-move 1s linear 8.5s 1 normal forwards, reset-knight-b8 0.5s linear 23s 1 normal forwards;
+          animation: black-2nd-move 1s linear 8.5s 1 normal forwards, reset-knight-b8 0.5s linear 23s 1 normal forwards;
 }
 
 #queen-d1 {
-  -webkit-animation-name: move5th, checkmate;
-          animation-name: move5th, checkmate;
-  -webkit-animation-duration: 2s, 1s;
-          animation-duration: 2s, 1s;
-  -webkit-animation-timing-function: linear, linear;
-          animation-timing-function: linear, linear;
-  -webkit-animation-delay: 10.5s, 16.5s;
-          animation-delay: 10.5s, 16.5s;
-  -webkit-animation-direction: normal, normal;
-          animation-direction: normal, normal;
-  -webkit-animation-iteration-count: 1, 1;
-          animation-iteration-count: 1, 1;
-  -webkit-animation-fill-mode: forwards, forwards;
-          animation-fill-mode: forwards, forwards;
+  -webkit-animation: white-3rd-move 2s linear 10.5s 1 normal forwards, white-4th-move 1s linear 16.5s 1 normal forwards, reset-queen-d1 0.5s linear 23s 1 normal forwards;
+          animation: white-3rd-move 2s linear 10.5s 1 normal forwards, white-4th-move 1s linear 16.5s 1 normal forwards, reset-queen-d1 0.5s linear 23s 1 normal forwards;
 }
 
 #bishop-f8 {
-  -webkit-animation: move6th 2s linear 13.5s 1 normal forwards;
-          animation: move6th 2s linear 13.5s 1 normal forwards;
+  -webkit-animation: black-3rd-move 2s linear 13.5s 1 normal forwards, reset-bishop-f8 0.5s linear 23s 1 normal forwards;
+          animation: black-3rd-move 2s linear 13.5s 1 normal forwards, reset-bishop-f8 0.5s linear 23s 1 normal forwards;
 }
 
 #pawn-f7 {
-  -webkit-animation: taken 0.5s linear 17s 1 normal forwards;
-          animation: taken 0.5s linear 17s 1 normal forwards;
+  -webkit-animation: taken 0.5s linear 17s 1 normal forwards, reset-pawn-f7 0.5s linear 23s 1 normal forwards;
+          animation: taken 0.5s linear 17s 1 normal forwards, reset-pawn-f7 0.5s linear 23s 1 normal forwards;
 }
 
 #king-e8 {
-  -webkit-animation: pulse 0.5s linear 18s infinite alternate forwards;
-          animation: pulse 0.5s linear 18s infinite alternate forwards;
+  -webkit-animation: pulse 0.5s linear 18s 10 alternate forwards, reset-king-e8 0.2s linear 23s 1 normal forwards;
+          animation: pulse 0.5s linear 18s 10 alternate forwards, reset-king-e8 0.2s linear 23s 1 normal forwards;
 }
 
 @-webkit-keyframes taken {
@@ -592,7 +580,7 @@ body .background {
     color: #ff6666;
   }
 }
-@-webkit-keyframes move1st {
+@-webkit-keyframes white-1st-move {
   from {
     position: relative;
     bottom: 0vmin;
@@ -602,7 +590,7 @@ body .background {
     bottom: 20vmin;
   }
 }
-@keyframes move1st {
+@keyframes white-1st-move {
   from {
     position: relative;
     bottom: 0vmin;
@@ -612,7 +600,7 @@ body .background {
     bottom: 20vmin;
   }
 }
-@-webkit-keyframes move2nd {
+@-webkit-keyframes black-1st-move {
   from {
     position: relative;
     top: 0vmin;
@@ -622,7 +610,7 @@ body .background {
     top: 20vmin;
   }
 }
-@keyframes move2nd {
+@keyframes black-1st-move {
   from {
     position: relative;
     top: 0vmin;
@@ -632,7 +620,7 @@ body .background {
     top: 20vmin;
   }
 }
-@-webkit-keyframes move3rd {
+@-webkit-keyframes white-2nd-move {
   from {
     position: relative;
     bottom: 0vmin;
@@ -644,7 +632,7 @@ body .background {
     right: 30vmin;
   }
 }
-@keyframes move3rd {
+@keyframes white-2nd-move {
   from {
     position: relative;
     bottom: 0vmin;
@@ -656,7 +644,7 @@ body .background {
     right: 30vmin;
   }
 }
-@-webkit-keyframes move4th {
+@-webkit-keyframes black-2nd-move {
   from {
     position: relative;
     top: 0vmin;
@@ -668,7 +656,7 @@ body .background {
     left: 10vmin;
   }
 }
-@keyframes move4th {
+@keyframes black-2nd-move {
   from {
     position: relative;
     top: 0vmin;
@@ -680,7 +668,7 @@ body .background {
     left: 10vmin;
   }
 }
-@-webkit-keyframes move5th {
+@-webkit-keyframes white-3rd-move {
   from {
     position: relative;
     bottom: 0vmin;
@@ -692,7 +680,7 @@ body .background {
     left: 40vmin;
   }
 }
-@keyframes move5th {
+@keyframes white-3rd-move {
   from {
     position: relative;
     bottom: 0vmin;
@@ -704,7 +692,7 @@ body .background {
     left: 40vmin;
   }
 }
-@-webkit-keyframes move6th {
+@-webkit-keyframes black-3rd-move {
   from {
     position: relative;
     top: 0vmin;
@@ -716,7 +704,7 @@ body .background {
     right: 40vmin;
   }
 }
-@keyframes move6th {
+@keyframes black-3rd-move {
   from {
     position: relative;
     top: 0vmin;
@@ -728,7 +716,7 @@ body .background {
     right: 40vmin;
   }
 }
-@-webkit-keyframes checkmate {
+@-webkit-keyframes white-4th-move {
   from {
     position: relative;
     bottom: 40vmin;
@@ -740,7 +728,7 @@ body .background {
     left: 20vmin;
   }
 }
-@keyframes checkmate {
+@keyframes white-4th-move {
   from {
     position: relative;
     bottom: 40vmin;
@@ -750,5 +738,173 @@ body .background {
     position: relative;
     bottom: 60vmin;
     left: 20vmin;
+  }
+}
+@-webkit-keyframes reset-knight-b8 {
+  from {
+    position: relative;
+    top: 20vmin;
+    left: 10vmin;
+  }
+  to {
+    position: relative;
+    top: 0vmin;
+    left: 0vmin;
+  }
+}
+@keyframes reset-knight-b8 {
+  from {
+    position: relative;
+    top: 20vmin;
+    left: 10vmin;
+  }
+  to {
+    position: relative;
+    top: 0vmin;
+    left: 0vmin;
+  }
+}
+@-webkit-keyframes reset-king-e8 {
+  from {
+    color: #990000;
+  }
+  to {
+    color: #000000;
+  }
+}
+@keyframes reset-king-e8 {
+  from {
+    color: #990000;
+  }
+  to {
+    color: #000000;
+  }
+}
+@-webkit-keyframes reset-bishop-f8 {
+  from {
+    position: relative;
+    top: 40vmin;
+    right: 40vmin;
+  }
+  to {
+    position: relative;
+    top: 0vmin;
+    right: 0vmin;
+  }
+}
+@keyframes reset-bishop-f8 {
+  from {
+    position: relative;
+    top: 40vmin;
+    right: 40vmin;
+  }
+  to {
+    position: relative;
+    top: 0vmin;
+    right: 0vmin;
+  }
+}
+@-webkit-keyframes reset-pawn-e7 {
+  from {
+    position: relative;
+    top: 20vmin;
+  }
+  to {
+    position: relative;
+    top: 0vmin;
+  }
+}
+@keyframes reset-pawn-e7 {
+  from {
+    position: relative;
+    top: 20vmin;
+  }
+  to {
+    position: relative;
+    top: 0vmin;
+  }
+}
+@-webkit-keyframes reset-pawn-f7 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes reset-pawn-f7 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reset-pawn-e2 {
+  from {
+    position: relative;
+    bottom: 20vmin;
+  }
+  to {
+    position: relative;
+    bottom: 0vmin;
+  }
+}
+@keyframes reset-pawn-e2 {
+  from {
+    position: relative;
+    bottom: 20vmin;
+  }
+  to {
+    position: relative;
+    bottom: 0vmin;
+  }
+}
+@-webkit-keyframes reset-queen-d1 {
+  from {
+    position: relative;
+    bottom: 60vmin;
+    left: 20vmin;
+  }
+  to {
+    position: relative;
+    bottom: 0vmin;
+    left: 0vmin;
+  }
+}
+@keyframes reset-queen-d1 {
+  from {
+    position: relative;
+    bottom: 60vmin;
+    left: 20vmin;
+  }
+  to {
+    position: relative;
+    bottom: 0vmin;
+    left: 0vmin;
+  }
+}
+@-webkit-keyframes reset-bishop-f1 {
+  from {
+    position: relative;
+    bottom: 40vmin;
+    right: 40vmin;
+  }
+  to {
+    position: relative;
+    bottom: 0vmin;
+    right: 0vmin;
+  }
+}
+@keyframes reset-bishop-f1 {
+  from {
+    position: relative;
+    bottom: 40vmin;
+    right: 40vmin;
+  }
+  to {
+    position: relative;
+    bottom: 0vmin;
+    right: 0vmin;
   }
 }/*# sourceMappingURL=styles.css.map */
