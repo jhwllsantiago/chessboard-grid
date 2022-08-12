@@ -10,9 +10,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/initial-position.css">
-    <link rel="stylesheet" href="./styles/animations.css">
-    <script src="./index.js" defer></script>
   </head>
   <body>
     <header><h1>SCHOLAR'S MATE</h1></header>
@@ -38,7 +35,7 @@
         <div><span>2</span></div>
         <div><span>1</span></div>
       </div>
-      <div class="grid-center">
+      <div class="center">
         <div class="box white-box">&nbsp;</div>
         <div class="box black-box">&nbsp;</div>
         <div class="box white-box">&nbsp;</div>
@@ -111,41 +108,41 @@
         <div class="box black-box">&nbsp;</div>
         <div class="box white-box">&nbsp;</div>
 
-        <div class="black-piece" id="a8"><i class="fas fa-chess-rook"></i></div>
-        <div class="black-piece" id="b8"><i class="fas fa-chess-knight"></i></div>
-        <div class="black-piece" id="c8"><i class="fas fa-chess-bishop"></i></div>
-        <div class="black-piece" id="d8"><i class="fas fa-chess-queen"></i></div>
-        <div class="black-piece" id="e8"><i class="fas fa-chess-king"></i></div>
-        <div class="black-piece" id="f8"><i class="fas fa-chess-bishop"></i></div>
-        <div class="black-piece" id="g8"><i class="fas fa-chess-knight"></i></div>
-        <div class="black-piece" id="h8"><i class="fas fa-chess-rook"></i></div>
+        <div class="black-piece" id="rook-a8"><i class="fas fa-chess-rook"></i></div>
+        <div class="black-piece" id="knight-b8"><i class="fas fa-chess-knight"></i></div>
+        <div class="black-piece" id="bishop-c8"><i class="fas fa-chess-bishop"></i></div>
+        <div class="black-piece" id="queen-d8"><i class="fas fa-chess-queen"></i></div>
+        <div class="black-piece" id="king-e8"><i class="fas fa-chess-king"></i></div>
+        <div class="black-piece" id="bishop-f8"><i class="fas fa-chess-bishop"></i></div>
+        <div class="black-piece" id="knight-g8"><i class="fas fa-chess-knight"></i></div>
+        <div class="black-piece" id="rook-h8"><i class="fas fa-chess-rook"></i></div>
 
-        <div class="black-piece" id="a7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="b7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="c7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="d7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="e7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="f7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="g7"><i class="fas fa-chess-pawn"></i></div>
-        <div class="black-piece" id="h7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-a7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-b7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-c7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-d7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-e7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-f7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-g7"><i class="fas fa-chess-pawn"></i></div>
+        <div class="black-piece" id="pawn-h7"><i class="fas fa-chess-pawn"></i></div>
 
-        <div class="white-piece" id="a2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="b2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="c2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="d2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="e2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="f2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="g2"><i class="fas fa-chess-pawn"></i></div>
-        <div class="white-piece" id="h2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-a2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-b2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-c2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-d2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-e2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-f2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-g2"><i class="fas fa-chess-pawn"></i></div>
+        <div class="white-piece" id="pawn-h2"><i class="fas fa-chess-pawn"></i></div>
 
-        <div class="white-piece" id="a1"><i class="fas fa-chess-rook"></i></div>
-        <div class="white-piece" id="b1"><i class="fas fa-chess-knight"></i></div>
-        <div class="white-piece" id="c1"><i class="fas fa-chess-bishop"></i></div>
-        <div class="white-piece" id="d1"><i class="fas fa-chess-queen"></i></div>
-        <div class="white-piece" id="e1"><i class="fas fa-chess-king"></i></div>
-        <div class="white-piece" id="f1"><i class="fas fa-chess-bishop"></i></div>
-        <div class="white-piece" id="g1"><i class="fas fa-chess-knight"></i></div>
-        <div class="white-piece" id="h1"><i class="fas fa-chess-rook"></i></div>
+        <div class="white-piece" id="rook-a1"><i class="fas fa-chess-rook"></i></div>
+        <div class="white-piece" id="knight-b1"><i class="fas fa-chess-knight"></i></div>
+        <div class="white-piece" id="bishop-c1"><i class="fas fa-chess-bishop"></i></div>
+        <div class="white-piece" id="queen-d1"><i class="fas fa-chess-queen"></i></div>
+        <div class="white-piece" id="king-e1"><i class="fas fa-chess-king"></i></div>
+        <div class="white-piece" id="bishop-f1"><i class="fas fa-chess-bishop"></i></div>
+        <div class="white-piece" id="knight-g1"><i class="fas fa-chess-knight"></i></div>
+        <div class="white-piece" id="rook-h1"><i class="fas fa-chess-rook"></i></div>
       </div>
       <div class="right">
         <div><span>8</span></div>
