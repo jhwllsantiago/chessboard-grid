@@ -61,13 +61,11 @@
 
 @keyframes white-1st-move {
   from {
-    position: relative;
-    bottom: 0vmin;
+    transform: translateY(0);
   }
 
   to {
-    position: relative;
-    bottom: 20vmin;
+    transform: translateY(-20vmin);
   }
 }
 
@@ -215,13 +213,11 @@
 
 @keyframes reset-pawn-e2 {
   from {
-    position: relative;
-    bottom: 20vmin;
+    transform: translateY(-20vmin);
   }
 
   to {
-    position: relative;
-    bottom: 0vmin;
+    transform: translateY(0vmin);
   }
 }
 

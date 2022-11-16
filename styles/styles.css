@@ -582,22 +582,18 @@ body .background {
 }
 @-webkit-keyframes white-1st-move {
   from {
-    position: relative;
-    bottom: 0vmin;
+    transform: translateY(0);
   }
   to {
-    position: relative;
-    bottom: 20vmin;
+    transform: translateY(-20vmin);
   }
 }
 @keyframes white-1st-move {
   from {
-    position: relative;
-    bottom: 0vmin;
+    transform: translateY(0);
   }
   to {
-    position: relative;
-    bottom: 20vmin;
+    transform: translateY(-20vmin);
   }
 }
 @-webkit-keyframes black-1st-move {
@@ -842,22 +838,18 @@ body .background {
 }
 @-webkit-keyframes reset-pawn-e2 {
   from {
-    position: relative;
-    bottom: 20vmin;
+    transform: translateY(-20vmin);
   }
   to {
-    position: relative;
-    bottom: 0vmin;
+    transform: translateY(0vmin);
   }
 }
 @keyframes reset-pawn-e2 {
   from {
-    position: relative;
-    bottom: 20vmin;
+    transform: translateY(-20vmin);
   }
   to {
-    position: relative;
-    bottom: 0vmin;
+    transform: translateY(0vmin);
   }
 }
 @-webkit-keyframes reset-queen-d1 {
